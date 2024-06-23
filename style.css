@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+.main-page{
+    height: 400vh;
+    background-color: #ebe7dc;
+    position: relative;
+}
+
+.main-page .header{
+    position: absolute;
+    width: 90vw;
+    max-width: 67rem;
+    padding: 0.6rem 0.6rem 0.6rem 3rem;
+    background-color: whitesmoke;
+    backdrop-filter: blur(1rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+    border-radius: 1.5rem;
+}
+
+.main-page .header a{
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.main-page .header .logo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: black;
+}
+
+.main-page .header .fa-chevron-down{
+    font-size: 1rem;
+}
+
+.main-page .header .btn{
+    padding: 1.5rem 2rem;
+    background-color: #f2d533;
+    border-radius: 1.5rem;
+    color: black;
+}
+
+.main-page .fa-bars{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media(max-width:1020px){
+
+    .main-page .header{
+        width:100%;
+        max-width:100%;
+        height: 100vh;
+        padding:2rem 2.3rem 3rem 3rem;
+        backdrop-filter:none;
+        display:block;
+        font-size: 2rem;
+        left:0;
+        top:0;
+        transform: translateX(0);
+        border-radius:0;
+    }
+
+    .main-page .header .login{
+        padding: 1.3rem 4.5rem;
+        border: 0.1rem solid black;
+        border-radius: 1.5rem;
+        display: inline-block;
+        margin: 1.7rem 2rem 0 0; 
+    }
+
+    .main-page .header .logo{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+    }     
+
+    .main-page .header .nav{
+        display: block;
+        color: black;
+        font-size: 4rem;
+        margin: 2.5rem 0;
+    }
+
+    .main-page .header .down{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .main-page .header .down i{
+        font-size: 2rem;
+    }
+
+    .main-page .fa-bars{
+        display: inline;
+    }
+  
+    .main-page .header{
+        clip-path: polygon(0 0,100% 0,100% 8%,0 8%);
+        background-color: #ebe7dc;
+        transition: 0.4s ease-out;
+    }
+
+    .main-page .header.head1{
+        clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
+        background-color: whitesmoke;
+    }
+     
+    
+}
+
+@media(max-width:765px){
+    html{
+        font-size: 2vw;
+    }
+}
+
+@media(max-width:350px){
+    .main-page .header{
+        clip-path: polygon(0 0,100% 0,100% 3.9%,0 3.9%);
+    }
+}
+
+@media(max-width:180px){
+    .main-page .header{
+        clip-path: polygon(0 0,100% 0,100% 2.5%,0 2.5%);
+    }
+}
