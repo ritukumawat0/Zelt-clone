@@ -5,10 +5,30 @@
     text-decoration: none;
     outline: none;
     box-sizing: border-box;
+    text-transform: capitalize;
 }
 
 html{
     font-size: 62.5%;
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+    height: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1rem solid rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: black;
 }
 
 .main-page{
@@ -33,6 +53,7 @@ html{
     transform: translateX(-50%);
     border-radius: 1.5rem;
 }
+
 
 .main-page .header a{
     color: rgba(0, 0, 0, 0.8);
@@ -59,40 +80,138 @@ html{
     display: none;
 }
 
+.main-page .product-detail{
+    position: absolute;
+    z-index: 1000;
+    font-size: 2rem;
+    top: 10rem;
+    left: 50%;
+    height: 25rem;
+    width:94rem;
+    padding: 3rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+}
+
+.main-page .product-detail .detail{
+    display: flex;
+    flex-direction: column;
+}
+
+.main-page .product-detail .detail a{
+    color: rgba(0, 0, 0);
+    margin: 0.8rem;
+    font-weight: 500;
+}
+
+.main-page .product-detail .detail p{
+    color: rgb(47, 42, 42);
+    font-size: 1.2rem;
+    padding: 0 0.75rem;
+    margin-top: 1rem;
+}
+
+.main-page .product-detail .detail .detail-11{
+    margin: 1rem 0;
+}
+
+.main-page .header .box{
+    overflow-y: scroll;
+    height: 28rem;
+    display: none;
+}
+
+.main-page .header .box .detail{
+    margin: 2rem 0;
+}
+
+.main-page .header .box .detail .detail-11 a{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-page .header .box .detail .detail-11 p{
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    color: rgba(128, 128, 128, 0.81);
+}
+
+.main-page .header .box .detail>a{
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 2rem;
+    margin-bottom: 1rem;
+}
 
 
 
+.main-page .resources-detail{
+    position: absolute;
+    z-index: 1000;
+    font-size: 2rem;
+    top: 10rem;
+    left: 50%;
+    height: 30rem;
+    width:70rem;
+    padding: 3rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    display: none;
+}
 
+.main-page .resources-detail .navigation-tool{
+    margin-top: 2.5rem;
+    width: 25rem;
+}
 
+.main-page .resources-detail .navigation-tool a{
+    color: black;
+    margin-bottom: 1.2rem;
+    display:block;
+}
 
+.main-page .resources-detail .feature{
+    width: 50rem;
+}
 
+.main-page .resources-detail .feature>a{
+    margin-left: 4rem;
+    font-size:1.2rem ;
+    color: rgba(128, 128, 128, 0.158);
+}
 
+.main-page .resources-detail .feature .image{
+    display: flex;
+    margin: 1rem 3rem;
+    gap: 2rem;
+}
 
+.main-page .resources-detail .feature .image img{
+    width: 30%;
+    border-radius: 1rem;
+}
 
+.main-page .resources-detail .feature a{
+    color: black;
+}
 
+.main-page .resources-detail .feature .image .img-detail a{
+    font-size: 1.7rem;
+    display: block;
+    line-height: 1.5;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.main-page .resources-detail .feature .image .img-detail a:first-child{
+    font-size: 1.2rem;
+    color: rgba(128, 128, 128, 0.81);
+}
 
 
 
@@ -116,6 +235,10 @@ html{
 
 
 @media(max-width:1020px){
+
+    .main-page.mainpage1{
+        height: 100vh;
+    }
 
     .main-page .header{
         width:100%;
@@ -176,13 +299,35 @@ html{
         clip-path: polygon(0 0,100% 0,100% 100%,0 100%);
         background-color: whitesmoke;
     }
-     
     
+    .main-page .product-detail{
+        position: absolute;
+        z-index: 1000;
+        font-size: 1rem;
+        top: 10rem;
+        left: 50%;
+        height: 25rem;
+        width:94rem;
+        padding: 3rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        transform: translateX(-50%);
+        border-radius: 2rem;
+    }
+
+    .main-page .header .box.box1{
+        display: block;
+    }
+
+    .main-page .product{
+        display: none;
+    }
 }
 
 @media(max-width:765px){
     html{
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 }
 
