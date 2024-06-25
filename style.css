@@ -94,6 +94,7 @@ html{
     background-color: #fff;
     transform: translateX(-50%);
     border-radius: 2rem;
+    transition: 0.5s ease-in-out;
 }
 
 .main-page .product-detail .detail{
@@ -148,6 +149,16 @@ html{
 }
 
 
+.main-page .header .box2{
+    height: 10rem;
+    overflow-y: scroll;
+    display: none;
+}
+
+.main-page .header .box2 .navigation-tool a{
+    display: block;
+    margin: 1rem 0;
+}
 
 .main-page .resources-detail{
     position: absolute;
@@ -163,7 +174,7 @@ html{
     background-color: #fff;
     transform: translateX(-50%);
     border-radius: 2rem;
-    display: none;
+    transition: 0.5s ease-in-out;
 }
 
 .main-page .resources-detail .navigation-tool{
@@ -239,7 +250,7 @@ html{
     .main-page.mainpage1{
         height: 100vh;
     }
-
+    
     .main-page .header{
         width:100%;
         max-width:100%;
@@ -322,7 +333,16 @@ html{
 
     .main-page .product{
         display: none;
+    } 
+
+    .main-page .resources{
+        display: none;
     }
+
+    .main-page .header .box2.box22{
+        display: block;
+    }
+
 }
 
 @media(max-width:765px){

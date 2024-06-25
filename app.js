@@ -1,4 +1,6 @@
+
 let bars=document.querySelector('.fa-bars');
+let body=document.querySelector('body');
 let header=document.querySelector('.header');
 let main=document.querySelector('.main-page');
 let down1=document.querySelector('.down1');
@@ -13,7 +15,7 @@ bars.addEventListener('click',function(){
 });
 
 down1.addEventListener('mouseover',function(event){
-     this.style.color='#ffd687' 
+   
      product.classList.add('product-detail')
      product.innerHTML=` <div class="detail">
           <div class="detail-11">
@@ -55,15 +57,15 @@ down1.addEventListener('mouseover',function(event){
 })
 
 down1.addEventListener('click',function(event){
+  
   product.classList.remove('product-detail');
   product.innerHTML='';
-  this.style.color='rgba(0, 0, 0, 0.8)' 
   let box=document.querySelector('.box');
   box.classList.toggle('box1');
 });
 
 down2.addEventListener('mouseover',function(){
-  this.style.color='#ffd687' ;
+  
   resources.classList.add('resources-detail');
   resources.innerHTML=` <div class="navigation-tool">
           <a href="#">knowledge center</a>
@@ -93,5 +95,14 @@ down2.addEventListener('mouseover',function(){
           </div>
 
          </div>`
-})
+});
+
+down2.addEventListener('click',function(event){
+ 
+  resources.classList.remove('resources-detail');
+  resources.innerHTML='';
+  let box2=document.querySelector('.box2');
+  box2.classList.toggle('box22');
+});
+
 
